@@ -95,11 +95,13 @@
     </footer>
 
     <script>
-        if ("serviceWorker" in navigator) {
-            navigator.serviceWorker("service-Worker.js")
-            .then(() => console.log("Sw registrado com sucesso"))
-            .catch(err => console.error("Erro ao registrar SW",err))
-        }
-    </script>
+  if ("serviceWorker" in navigator) {
+    navigator.serviceWorker
+      .register("./service-worker.js", { scope: "./" })
+      .then(reg => console.log("SW ok:", reg.scope))
+      .catch(err => console.error("SW erro:", err));
+  }
+</script>
 </body>
+
 </html>
