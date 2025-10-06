@@ -1,0 +1,68 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --cor-fundo: #f7f9f7;
+    --cor-texto: #222;
+    --cor-primaria: #0a3d91;
+    --cor-secundaria: #0f6fd6;
+    --cor-borda: #d9e2ef;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: system ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+    color: var(--cor-texto);
+    background: var(--cor-fundo);
+    line-height: 1.6;
+}
+
+main, header, section, footer {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 16px;
+}
+
+header {
+    text-align: center;
+    padding-top: 24px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--cor-secundaria);
+    border-radius: 6px;
+    background: #fff;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 16px;
+    font-family: Arial, sans-serif;
+}
+
+th {
+    background-color: #0a3d91;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #d9e2ef;
+}
+
+td {
+    padding: 8px;
+    border: 1px solid #d9e2ef;
+    text-align: center;
+}
+
+tbody tr:hover{
+    background-color: #e2eefc;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f7fcbb;  /* Linha par com cor de fundo mais clara */
+}
